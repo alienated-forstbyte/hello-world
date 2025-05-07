@@ -14,7 +14,7 @@ pipeline {
     stage('Build DOcker Image'){
       steps{
         sh'''
-        docker build -t hello-python .
+        docker build -f hello-python .
         '''
       }
     }
