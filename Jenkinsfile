@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Run Test'){
       steps {
-        sh 'python your_script.py'
+        sh 'python hello.py'
       }
     }
   }
