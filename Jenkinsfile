@@ -7,8 +7,9 @@ pipeline {
                 echo 'Building...'
                 sh'''
                     git pull https://github.com/alienated-forstbyte/hello-world.git
+                    su root
                     cd hello-world
-                    sudo docker build -t hello-world .
+                    docker build -t hello-world .
                 '''
             }
         }
