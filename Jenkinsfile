@@ -17,7 +17,7 @@ pipeline {
                 echo 'Testing...'
                 sh'''
                     cd hello-world
-                    docker run --rm hello-world
+                    sudo docker run --rm hello-world
                 '''
             }
         }
