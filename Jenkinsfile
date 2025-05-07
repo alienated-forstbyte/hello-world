@@ -14,14 +14,10 @@ pipeline {
     stage('Build Docker Image'){
       steps{
         script{
-          withDockerRegistry(credentialsId: 'docker-pass'){
-            sh'''
-            docker build -f hello-python .
-            '''
-          }
+            sh 'docker build -f hello-python .'
+          
         }
       }
     }
   }
-      
 }
