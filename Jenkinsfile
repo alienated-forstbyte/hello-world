@@ -8,7 +8,7 @@ pipeline {
                 sh'''
                     git clone https://github.com/alienated-forstbyte/hello-world
                     cd hello-world
-                    docker build -t hello-world .
+                    sudo docker build -t hello-world .
                 '''
             }
         }
