@@ -11,6 +11,13 @@ pipeline {
         sh 'python hello.py'
       }
     }
+    stage('Build DOcker Image'){
+      steps{
+        sh'''
+        docker build -t hello-python .
+        '''
+      }
+    }
   }
       
 }
