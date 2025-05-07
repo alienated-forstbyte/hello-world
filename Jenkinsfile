@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout Code') {
       steps {
-        git url:'https://github.com/alienated-forstbyte/hello-world', branch:'master'
+        git url:'https://github.com/alienated-forstbyte/hello-world.git', branch:'master'
       }
     }
     stage('Run Test'){
