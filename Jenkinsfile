@@ -6,6 +6,8 @@ pipeline {
             git url:'https://github.com/alienated-forstbyte/hello-world', branch:'master'
           }
     }
+    stage(''){
+    }
   }
       
 }
