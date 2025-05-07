@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh'''
-                    git clone https://github.com/alienated-forstbyte/hello-world
+                    git pull https://github.com/alienated-forstbyte/hello-world.git
                     cd hello-world
                     sudo docker build -t hello-world .
                 '''
