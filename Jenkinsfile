@@ -14,7 +14,7 @@ pipeline {
     stage('Build Docker Image'){
       steps{
         script{
-            sh 'docker build -t hellopython -f .'
+            sh 'docker build -t hellopython -f . .'
           
         }
       }
