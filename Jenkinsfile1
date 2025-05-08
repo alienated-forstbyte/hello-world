@@ -6,7 +6,6 @@ pipeline {
         sh '''
           python --version
           git --version
-          curl --version
         '''
       }
     }
