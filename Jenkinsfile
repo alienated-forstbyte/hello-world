@@ -14,7 +14,7 @@ pipeline {
     stage('Build Docker Image'){
       steps{
         script{
-            docker.build(hellopython)
+            docker.build('hellopython')
           
         }
       }
