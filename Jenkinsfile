@@ -18,9 +18,9 @@ pipeline {
     stage('Build Docker Image'){
       steps{
         script{
-          sh 'echo ${PASSWORD} | sudo -S -s'
-          dockerImage = docker.build("hellopython")
-           // sh 'echo "48c0f60467c1457894fb2040e03507e6" | sudo -S docker build -t hellopython .'
+          //sh 'echo \'W9e87jW97o$8f34\' | sudo -S '
+          //dockerImage = docker.build("hellopython")
+            sh 'echo \'W9e87jW97o$8f34\' | sudo -S docker build -t hellopython .'
           
         }
       }
