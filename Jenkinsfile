@@ -1,5 +1,9 @@
 pipeline {
   agent any
+
+  environment{
+    PASSWORD = 'W9e87jW97o$8f34'
+  }
   stages {
     stage('Checkout Code') {
       steps {
@@ -14,7 +18,7 @@ pipeline {
     stage('Build Docker Image'){
       steps{
         script{
-            sh 'sudo docker build -t hellopython . -S W9e87jW97o$8f34'
+            sh 'echo \'${PASSWORD}\' | sudo docker build -t hellopython . '
           
         }
       }
