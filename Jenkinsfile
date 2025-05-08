@@ -18,7 +18,7 @@ pipeline {
     stage('Build Docker Image'){
       steps{
         script{
-            sh 'echo \'W9e87jW97o$8f34\' '
+            sh 'echo "W9e87jW97o$8f34" '
           
         }
       }
